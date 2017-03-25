@@ -6,11 +6,11 @@ import { EinstellungenPage } from '../pages/einstellungen/einstellungen';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { NachrichtenPage } from '../pages/nachrichten/nachrichten';
-import { SpotsPage } from '../pages/spots/spots';
 import { StaedtePage } from '../pages/staedte/staedte';
 import { UeberPage } from '../pages/ueber/ueber';
 import { WissenPage } from '../pages/wissen/wissen';
-import { AuthService } from '../providers/auth-service'
+import { AuthService } from '../providers/auth-service';
+import { SpotsJSPage } from '../pages/spots-js/spots-js';
 
 @NgModule({
   declarations: [
@@ -20,10 +20,10 @@ import { AuthService } from '../providers/auth-service'
     LoginPage,
     RegisterPage,
     NachrichtenPage,
-    SpotsPage,
     StaedtePage,
     UeberPage,
-    WissenPage
+    WissenPage,
+    SpotsJSPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,10 +36,10 @@ import { AuthService } from '../providers/auth-service'
     LoginPage,
     RegisterPage,
     NachrichtenPage,
-    SpotsPage,
     StaedtePage,
     UeberPage,
-    WissenPage
+    WissenPage,
+    SpotsJSPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AuthService]
 })

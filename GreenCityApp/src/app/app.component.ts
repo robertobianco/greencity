@@ -1,12 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { CommunityPage } from '../pages/community/community';
 import { EinstellungenPage } from '../pages/einstellungen/einstellungen';
 import { LoginPage } from '../pages/login/login';
 import { NachrichtenPage } from '../pages/nachrichten/nachrichten';
-import { SpotsPage } from '../pages/spots/spots';
+import { SpotsJSPage } from '../pages/spots-js/spots-js';
 import { StaedtePage } from '../pages/staedte/staedte';
 import { UeberPage } from '../pages/ueber/ueber';
 import { WissenPage } from '../pages/wissen/wissen';
@@ -17,7 +16,7 @@ import { WissenPage } from '../pages/wissen/wissen';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SpotsPage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -27,7 +26,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Login', component: LoginPage },
-      { title: 'Spots', component: SpotsPage },
+      { title: 'Spots', component: SpotsJSPage },
       { title: 'Wissen', component: WissenPage },
       { title: 'Community', component: CommunityPage },
       { title: 'Nachrichten', component: NachrichtenPage },
